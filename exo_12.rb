@@ -1,8 +1,4 @@
 puts "Donne moi un nombre "
 print "> "
-i = gets.chomp
-count = 1
-while i.to_i >= count
-    puts "#{count}"
-    count += 1
-end
+i = gets.chomp.to_i
+1.upto(i) { |i| puts i }
